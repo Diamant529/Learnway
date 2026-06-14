@@ -1,0 +1,102 @@
+/* =====================================================================
+   GLASSMORPHISM DESIGN SYSTEM - Learn Way
+   Fichier de styles pour les effets de verre et de flou modernes
+   ===================================================================== */
+
+.glass-panel {
+  background: rgba(17, 34, 64, 0.55);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-normal);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(100, 255, 218, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(100, 255, 218, 0.1);
+}
+
+/* En-tête ou Navbar en effet de verre */
+.glass-navbar {
+  background: rgba(10, 25, 47, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Bouton effet de verre */
+.glass-btn {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all var(--transition-fast);
+}
+
+.glass-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Inputs en effet de verre */
+.glass-input {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(5px);
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(100, 255, 218, 0.4) !important;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.1) !important;
+}
+
+/* Dégradés de texte */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 30%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-info) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #b39ddb 0%, var(--color-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Éléments décoratifs en tâche de lumière (Glow dots) */
+.glow-dot {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.08) 0%, rgba(10, 25, 47, 0) 70%);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glow-purple {
+  background: radial-gradient(circle, rgba(126, 87, 194, 0.08) 0%, rgba(10, 25, 47, 0) 70%);
+}
