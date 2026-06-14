@@ -4,11 +4,7 @@
 -- DBMS : MySQL / MariaDB
 -- =====================================================================
 
-CREATE DATABASE IF NOT EXISTS `learnway_db`
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
-
-USE `learnway_db`;
+-- (La base de données est gérée et sélectionnée automatiquement par l'application/Railway)
 
 -- Désactivation temporaire des contraintes de clé étrangère pour la réinitialisation
 SET FOREIGN_KEY_CHECKS = 0;
